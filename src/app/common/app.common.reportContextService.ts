@@ -11,7 +11,7 @@ export class ReportContext {
 
     constructor(private http: Http) { }
 
-    getReport(path: string): Observable<IReport> {
+    private getReport(path: string): Observable<IReport> {
         var url: string = path || './sample-data.json';
         return this.http.get(url).map(res => {
             this.report = <IReport>res.json();
@@ -19,23 +19,90 @@ export class ReportContext {
         });
     }
 
+    private fetch<T>(callback: (arg: IReport) => T): T {
+        if (this.report) {
+            return callback(this.report);
+        }
+
+        this.getReport('').subscribe((report) => {
+            return callback(report);
+        });
+    }
+
     getSuites(): ISuite[] {
-        return null;
+        return this.fetch<ISuite[]>((report) => {
+            return report.suites;
+        });
     }
 
-    getSuite(suiteId: number): ISuite {
-        return null;
+    getSuite(suiteId: string): ISuite {
+        return this.fetch<ISuite>((report) => {
+            let target: ISuite;
+
+            report.suites.forEach((suite) => {
+                if (suite.id === suiteId) {
+                    target = suite;
+                }
+            })
+
+            return target;
+        });
     }
 
-    getTests(suiteId: number): ITest[] {
-        return null;
+    getTests(suiteId: string): ITest[] {
+        return this.fetch<ITest[]>((report) => {
+
+            let tests: ITest[];
+
+            report.suites.forEach((suite) => {
+                if (suite.id === suiteId) {
+                    tests = suite.tests;
+                }
+            })
+
+            return tests;
+        });
     }
 
-    getTest(testId: number): ITest {
-        return null;
+    getTest(testId: string): ITest {
+        return this.fetch<ITest>((report) => {
+
+            let target: ITest;
+
+            report.suites.forEach((suite) => {
+                suite.tests.forEach((test) => {
+                    if (test.id === testId) {
+                        target = test;
+                        return;
+                    }
+                });
+                if (target) {
+                    return;
+                }
+            });
+
+            return target;
+        });
     }
 
-    getSteps(testId: number): IStep[] {
-        return null;
+    getSteps(testId: string): IStep[] {
+
+        return this.fetch<IStep[]>((report) => {
+            let target: IStep[];
+
+            report.suites.forEach((suite) => {
+                suite.tests.forEach((test) => {
+                    if (test.id === testId) {
+                        target = test.steps;
+                        return;
+                    }
+                });
+                if (target) {
+                    return;
+                }
+            });
+
+            return target;
+        });
     }
 }
