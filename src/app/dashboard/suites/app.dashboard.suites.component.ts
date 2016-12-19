@@ -9,6 +9,8 @@ import { ISuite } from "../../entities";
 export class SuitesComponent implements OnInit {
     suitesData: ISuite[];
 
+    activeSuite:String;
+
     @Output('suiteId')
     suiteId: EventEmitter<String>;
 
@@ -24,6 +26,7 @@ export class SuitesComponent implements OnInit {
     }
 
     changeSuite(suite: ISuite): void {
+        this.activeSuite=suite.id;
         this.suiteId.emit(suite.id);
     }
 }

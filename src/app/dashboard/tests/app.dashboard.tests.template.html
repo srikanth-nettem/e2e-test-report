@@ -1,13 +1,15 @@
 <div>
-    <table class="table table-bordered">
+    <table class="table table-condensed table-striped">
         <tr>
-            <th class="text-centre">#</th>
-            <th class="text-centre">Test Name</th>
+            <th class="text-left">#</th>
+            <th class="text-left">Timestamp</th>
+            <th class="text-left">Test Name</th>
             <th class="text-centre"></th>
         </tr>
         <tr *ngFor='let test of testsData, let i=index'>
-            <td class="text-centre">{{i+1}}</td>
-            <td class="text-centre">{{test.name}}</td>
+            <td class="text-left">{{i+1}}</td>
+            <td class="text-left">{{test.start}}</td>
+            <td class="text-left">{{test.name}}</td>
             <td class="text-centre"><button class="btn btn-sm" [ngClass]="{'btn-success': test.state.toString().toLowerCase()==='pass', 'btn-danger': test.state.toString().toLowerCase()==='fail', 'btn-warning': test.state.toString().toLowerCase()==='skip', 'btn-default': test.state.toString().toLowerCase()==='error'}">{{test.state.toString().toUpperCase()}}</button></td>
         </tr>
     </table>

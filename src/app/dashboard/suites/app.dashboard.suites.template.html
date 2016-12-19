@@ -1,5 +1,11 @@
-<div class="text-left">
-    <div *ngFor="let suite of suitesData" class="alert alert-info"  (click)="changeSuite(suite)">
-            <h5>{{suite.name.toUpperCase()}}</h5>
-    </div>
-</div>
+<ul class="text-left list-group">
+    <li class='list-group-item'>
+        <h4 class='list-group-item-heading'>
+            SUITES
+        </h4>
+    </li>
+    <li *ngFor="let suite of suitesData, let i=index" (click)="changeSuite(suite)" class='list-group-item' [ngClass]="{'active': activeSuite==suite.id || (i==0 && !activeSuite)}">
+        <span class="list-group-item-text"> {{suite.name.toUpperCase()}}</span>
+        <span class="badge badge-sm">{{suite.tests.length}}</span>
+    </li>
+</ul>

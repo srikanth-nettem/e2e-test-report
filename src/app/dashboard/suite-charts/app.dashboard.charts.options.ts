@@ -17,7 +17,8 @@ export class SuiteChartOptions {
 
     private options: any = {
         chart: {
-            height: 300,
+            height: 250,
+            width:450,
             type: 'column'
         },
         title: {

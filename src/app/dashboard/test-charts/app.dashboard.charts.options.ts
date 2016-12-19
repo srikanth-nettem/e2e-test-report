@@ -17,7 +17,8 @@ export class TestChartOptions {
 
     private options: any = {
         chart: {
-            height: 300,
+            height: 250,
+            width:450,
             type: 'pie'
         },
         title: {
@@ -55,7 +56,7 @@ export class TestChartOptions {
             pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
         },
         plotOptions: {
-              pie: {
+            pie: {
                 allowPointSelect: true,
                 cursor: 'pointer',
                 dataLabels: {
@@ -65,44 +66,46 @@ export class TestChartOptions {
                         color: 'black'
                     }
                 },
-                colors: ['#7cb5ec', '#434348', '#90ed7d', '#f7a35c']
             }
         },
+        colors: ['#008000', '#ff0000',
+            '#800000', '#FFE4B5'],
         series: []
     };
 
     getOptions(): Observable<Object> {
         let deferred;
 
-        this.getSeries().subscribe((data)=>{
+        this.getSeries().subscribe((data) => {
             this.options.series = data;
             deferred.next(this.options);
             deferred.complete();
         });
 
-        return new Observable((observer)=> deferred=observer);
-        
+        return new Observable((observer) => deferred = observer);
+
     }
 
     private getSeries(): Observable<ISeries[]> {
         let deferred;
-        this.reportContext.getSuites().subscribe((suites)=>{
-             let seriesData: ISeries[]=[];
+        this.reportContext.getSuites().subscribe((suites) => {
+            let seriesData: ISeries[] = [];
             suites.forEach((suite) => {
-            let seriesDataItem: ISeries = { name: suite.name, data: [] };
-            this.categories.forEach((category) => {
-                seriesDataItem.data.push(this.getSeriesData(suite, category))
+                let seriesDataItem: ISeries = { name: suite.name, data: [] };
+                this.categories.forEach((category) => {
+                    seriesDataItem.data.push(this.getSeriesData(suite, category))
+                });
+                seriesData.push(seriesDataItem);
+                deferred.next(seriesData);
+                deferred.complete();
             });
-            seriesData.push(seriesDataItem);
-            deferred.next(seriesData); 
-            deferred.complete();});
-            });
-        return new Observable((observer)=> deferred = observer);
+        });
+        return new Observable((observer) => deferred = observer);
     }
 
     private getSeriesData(suite: ISuite, category: Status): Number {
         return suite.tests.filter((test) => {
-        return test.state.toString().toLowerCase() === Status[category].toLowerCase()
+            return test.state.toString().toLowerCase() === Status[category].toLowerCase()
         }
         ).length;
     }
