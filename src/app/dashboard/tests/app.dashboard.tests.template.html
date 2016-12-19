@@ -1,14 +1,14 @@
 <div>
     <table class="table table-bordered">
         <tr>
-            <th>#</th>
-            <th>Test Name</th>
-            <th></th>
+            <th class="text-centre">#</th>
+            <th class="text-centre">Test Name</th>
+            <th class="text-centre"></th>
         </tr>
         <tr *ngFor='let test of testsData, let i=index'>
-            <td>{{i}}</td>
-            <td>{{test.name}}</td>
-            <td><button class="btn btn-success">View</button></td>
+            <td class="text-centre">{{i+1}}</td>
+            <td class="text-centre">{{test.name}}</td>
+            <td class="text-centre"><button class="btn btn-sm" [ngClass]="{'btn-success': test.state.toString().toLowerCase()==='pass', 'btn-danger': test.state.toString().toLowerCase()==='fail', 'btn-warning': test.state.toString().toLowerCase()==='skip', 'btn-default': test.state.toString().toLowerCase()==='error'}">{{test.state.toString().toUpperCase()}}</button></td>
         </tr>
     </table>
 </div>

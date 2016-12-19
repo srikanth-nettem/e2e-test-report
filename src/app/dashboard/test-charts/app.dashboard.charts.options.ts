@@ -21,7 +21,7 @@ export class TestChartOptions {
             type: 'pie'
         },
         title: {
-            text: 'Stacked column chart'
+            text: 'TESTS'
         },
         xAxis: {
             categories: this.categories.map((category) => Status[category])

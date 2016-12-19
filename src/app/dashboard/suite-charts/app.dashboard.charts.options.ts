@@ -21,7 +21,7 @@ export class SuiteChartOptions {
             type: 'column'
         },
         title: {
-            text: 'Stacked column chart'
+            text: 'SUITES'
         },
         xAxis: {
             categories: this.categories.map((category) => Status[category])
