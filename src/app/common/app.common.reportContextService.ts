@@ -9,7 +9,8 @@ export class ReportContext {
 
     private report: IReport;
 
-    constructor(private http: Http) { }
+    constructor(private http: Http) {
+    }
 
     private getReport(path: string): Observable<IReport> {
         var url: string = path || './sample-data.json';
@@ -19,63 +20,56 @@ export class ReportContext {
         });
     }
 
-    private fetch<T>(callback: (arg: IReport) => T): T {
-        if (this.report) {
-            return callback(this.report);
-        }
+    private fetch<T>(callback: (arg: IReport) => T): Observable<T> {
+        let deferred;
+
+        // if (this.report) {
+        //     return new Observable(observer => { observer.next(callback(this.report)); observer.complete();});
+        // }
 
         this.getReport('').subscribe((report) => {
-            return callback(report);
+            deferred.next(callback(report));
+            deferred.complete();
         });
+
+        return new Observable(observer => { deferred = observer });
     }
 
-    getSuites(): ISuite[] {
+    private find<T>(args: T[], callback: (arg: T) => boolean): T {
+        return args.find((arg) => callback(arg));
+    }
+
+    getSuites(): Observable<ISuite[]> {
         return this.fetch<ISuite[]>((report) => {
             return report.suites;
         });
     }
 
-    getSuite(suiteId: string): ISuite {
+    getSuite(suiteId: string): Observable<ISuite> {
         return this.fetch<ISuite>((report) => {
-            let target: ISuite;
-
-            report.suites.forEach((suite) => {
-                if (suite.id === suiteId) {
-                    target = suite;
-                }
-            })
-
-            return target;
+            return report && report.suites && this.find<ISuite>(report.suites, (suite) => suite.id == suiteId)
         });
     }
 
-    getTests(suiteId: string): ITest[] {
+    getTests(suiteId: string): Observable<ITest[]> {
         return this.fetch<ITest[]>((report) => {
-
-            let tests: ITest[];
-
-            report.suites.forEach((suite) => {
-                if (suite.id === suiteId) {
-                    tests = suite.tests;
-                }
-            })
-
-            return tests;
+            let suite = report && report.suites && this.find<ISuite>(report.suites, (suite) => suite.id == suiteId);
+            return suite && suite.tests;
         });
     }
 
-    getTest(testId: string): ITest {
+    getTest(testId: string): Observable<ITest> {
+
         return this.fetch<ITest>((report) => {
+
+            if (!report || !report.suites) {
+                return null;
+            }
 
             let target: ITest;
 
             report.suites.forEach((suite) => {
-                suite.tests.forEach((test) => {
-                    if (test.id === testId) {
-                        target = test;
-                        return;
-                    }
-                });
+                target = suite && suite.tests && this.find<ITest>(suite.tests, (test) => test.id == testId);
                 if (target) {
                     return;
                 }
@@ -85,24 +79,23 @@ export class ReportContext {
         });
     }
 
-    getSteps(testId: string): IStep[] {
+    getSteps(testId: string): Observable<IStep[]> {
 
         return this.fetch<IStep[]>((report) => {
-            let target: IStep[];
+            if (!this.report || !report.suites) {
+                return null;
+            }
+
+            let target: ITest;
 
             report.suites.forEach((suite) => {
-                suite.tests.forEach((test) => {
-                    if (test.id === testId) {
-                        target = test.steps;
-                        return;
-                    }
-                });
+                target = suite && suite.tests && this.find<ITest>(suite.tests, (test) => test.id == testId);
                 if (target) {
                     return;
                 }
             });
 
-            return target;
+            return target && target.steps;
         });
     }
 }

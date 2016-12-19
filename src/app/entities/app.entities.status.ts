@@ -8,5 +8,5 @@ export enum Status {
 }
 
 export interface IStatus {
-    status: Status
+    state: Status
 }

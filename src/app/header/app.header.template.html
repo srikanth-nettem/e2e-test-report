@@ -1,0 +1,10 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">{{brand}}</a>
+        </div>
+        <ul class='nav navbar-nav'>
+                <li *ngFor= "let navItem of navItems" class={{navItem.class}}><a href="#"><span>{{navItem.name}}</span></a></li>
+        </ul>
+    </div>
+</nav>
