@@ -1,3 +1,9 @@
-<app-header></app-header>
-<hr />
-<e2e-test-dashboard></e2e-test-dashboard>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-1">
+                <app-header></app-header>
+        </div>
+        <div class='col-sm-11'>
+           <router-outlet></router-outlet>
+        </div>
+    </div>

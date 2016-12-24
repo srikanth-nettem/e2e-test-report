@@ -17,8 +17,8 @@ export class TestChartOptions {
 
     private options: any = {
         chart: {
-            height: 250,
-            width:450,
+            height: 300,
+            width:500,
             type: 'pie'
         },
         title: {
@@ -100,7 +100,7 @@ export class TestChartOptions {
                 deferred.complete();
             });
         });
-        return new Observable((observer) => deferred = observer);
+        return new Observable<ISeries[]>((observer) => deferred = observer);
     }
 
     private getSeriesData(suite: ISuite, category: Status): Number {

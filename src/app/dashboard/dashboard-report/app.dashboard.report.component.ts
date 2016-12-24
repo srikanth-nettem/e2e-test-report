@@ -3,7 +3,8 @@ import {ReportContext} from "../../common";
 
 @Component({
     selector:'dashboard-report',
-    templateUrl:'./app.dashboard.template.html'
+    templateUrl:'./app.dashboard.template.html',
+    styleUrls:["./app.dashboard.report.css"]
 })
 export class DashboardReportComponent{
     @Input()

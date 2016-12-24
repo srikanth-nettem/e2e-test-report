@@ -1,0 +1,44 @@
+
+[1;33m=======================================================================================[0m
+Selenium 2.0 / webdriver protocol bindings implementation with helper commands in nodejs.
+For a complete list of commands, visit [1;32mhttp://webdriver.io/api.html[0m.
+[1;33m=======================================================================================[0m
+
+[15:03:34]  COMMAND	POST 	 "/wd/hub/session"
+[15:03:34]  DATA		{"desiredCapabilities":{"javascriptEnabled":true,"locationContextEnabled":true,"handlesAlerts":true,"rotatable":true,"maxInstances":5,"browserName":"chrome","loggingPrefs":{"browser":"ALL","driver":"ALL"},"requestOrigins":{"url":"http://webdriver.io","version":"4.5.1","name":"webdriverio"}}}
+[15:03:35]  INFO	SET SESSION ID cd894b69-98c2-43c8-b2b7-9ecdfc824b02
+[15:03:35]  RESULT		{"applicationCacheEnabled":false,"rotatable":false,"mobileEmulationEnabled":false,"networkConnectionEnabled":false,"chrome":{"chromedriverVersion":"2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1)","userDataDir":"/var/folders/tg/t1f82zj94g12mp6y9k_0427w0000gn/T/.org.chromium.Chromium.qTCFUD"},"takesHeapSnapshot":true,"pageLoadStrategy":"normal","databaseEnabled":false,"handlesAlerts":true,"hasTouchScreen":false,"version":"55.0.2883.95","platform":"MAC","browserConnectionEnabled":false,"nativeEvents":true,"acceptSslCerts":true,"webdriver.remote.sessionid":"cd894b69-98c2-43c8-b2b7-9ecdfc824b02","locationContextEnabled":true,"webStorageEnabled":true,"browserName":"chrome","takesScreenshot":true,"javascriptEnabled":true,"cssSelectorsEnabled":true}
+[15:03:35]  INFO	this is the custom method
+[15:03:35]  COMMAND	POST 	 "/wd/hub/session/cd894b69-98c2-43c8-b2b7-9ecdfc824b02/url"
+[15:03:35]  DATA		{"url":"http://newtours.demoaut.com/"}
+[15:03:36]  RESULT		null
+[15:03:36]  COMMAND	POST 	 "/wd/hub/session/cd894b69-98c2-43c8-b2b7-9ecdfc824b02/elements"
+[15:03:36]  DATA		{"using":"css selector","value":"input[name='userName']"}
+[15:03:36]  RESULT		[{"ELEMENT":"0"}]
+[15:03:36]  COMMAND	POST 	 "/wd/hub/session/cd894b69-98c2-43c8-b2b7-9ecdfc824b02/element/0/clear"
+[15:03:36]  DATA		{}
+[15:03:36]  RESULT		null
+[15:03:36]  COMMAND	POST 	 "/wd/hub/session/cd894b69-98c2-43c8-b2b7-9ecdfc824b02/element/0/value"
+[15:03:36]  DATA		{"value":["m","e","r","c","u","r","y"]}
+[15:03:36]  RESULT		null
+[15:03:36]  COMMAND	POST 	 "/wd/hub/session/cd894b69-98c2-43c8-b2b7-9ecdfc824b02/elements"
+[15:03:36]  DATA		{"using":"css selector","value":"input[name='password']"}
+[15:03:36]  RESULT		[{"ELEMENT":"1"}]
+[15:03:36]  COMMAND	POST 	 "/wd/hub/session/cd894b69-98c2-43c8-b2b7-9ecdfc824b02/element/1/clear"
+[15:03:36]  DATA		{}
+[15:03:36]  RESULT		null
+[15:03:36]  COMMAND	POST 	 "/wd/hub/session/cd894b69-98c2-43c8-b2b7-9ecdfc824b02/element/1/value"
+[15:03:36]  DATA		{"value":["m","e","r","c","u","r","y"]}
+[15:03:36]  RESULT		null
+[15:03:36]  COMMAND	POST 	 "/wd/hub/session/cd894b69-98c2-43c8-b2b7-9ecdfc824b02/element"
+[15:03:36]  DATA		{"using":"css selector","value":"input[name='login']"}
+[15:03:36]  RESULT		{"ELEMENT":"2"}
+[15:03:36]  COMMAND	POST 	 "/wd/hub/session/cd894b69-98c2-43c8-b2b7-9ecdfc824b02/element/2/click"
+[15:03:36]  DATA		{}
+[15:03:38]  RESULT		null
+[15:03:38]  COMMAND	GET 	 "/wd/hub/session/cd894b69-98c2-43c8-b2b7-9ecdfc824b02/title"
+[15:03:38]  DATA		{}
+[15:03:38]  RESULT		"Find a Flight: Mercury Tours:"
+[15:03:38]  COMMAND	DELETE 	 "/wd/hub/session/cd894b69-98c2-43c8-b2b7-9ecdfc824b02"
+[15:03:38]  DATA		{}
+[15:03:38]  RESULT		null

@@ -1,0 +1,1472 @@
+{
+    "domain": null,
+    "_events": {},
+    "_eventsCount": 21,
+    "reporters": [
+        {
+            "_events": {},
+            "_eventsCount": 13
+        }
+    ],
+    "printEpilogue": true,
+    "cursor": {},
+    "stats": {
+        "type": "base",
+        "start": "2016-12-21T03:55:27.081Z",
+        "_duration": 5368,
+        "counts": {
+            "suites": 1,
+            "tests": 1,
+            "hooks": 0,
+            "passes": 1,
+            "pending": 0,
+            "failures": 0
+        },
+        "runners": {
+            "0-0": {
+                "type": "runner",
+                "start": "2016-12-21T03:55:27.728Z",
+                "_duration": 0,
+                "cid": "0-0",
+                "capabilities": {
+                    "maxInstances": 5,
+                    "browserName": "chrome"
+                },
+                "sanitizedCapabilities": "chrome",
+                "config": {
+                    "host": "127.0.0.1",
+                    "port": 4444,
+                    "sync": true,
+                    "specs": [
+                        "./src/test/**/*.js"
+                    ],
+                    "suites": {},
+                    "exclude": [],
+                    "logLevel": "verbose",
+                    "coloredLogs": true,
+                    "baseUrl": "http://newtours.demoaut.com/",
+                    "bail": 0,
+                    "waitforInterval": 500,
+                    "waitforTimeout": 10000,
+                    "framework": "jasmine",
+                    "reporters": [
+                        null
+                    ],
+                    "reporterOptions": {
+                        "outputDir": "./report"
+                    },
+                    "maxInstances": 10,
+                    "maxInstancesPerCapability": 100,
+                    "connectionRetryTimeout": 90000,
+                    "connectionRetryCount": 3,
+                    "debug": false,
+                    "execArgv": null,
+                    "mochaOpts": {
+                        "timeout": 10000
+                    },
+                    "jasmineNodeOpts": {
+                        "defaultTimeoutInterval": 10000
+                    },
+                    "before": [],
+                    "beforeSession": [],
+                    "beforeSuite": [],
+                    "beforeHook": [],
+                    "beforeTest": [],
+                    "beforeCommand": [
+                        null
+                    ],
+                    "afterCommand": [
+                        null
+                    ],
+                    "afterTest": [],
+                    "afterHook": [],
+                    "afterSuite": [],
+                    "afterSession": [],
+                    "after": [],
+                    "onError": [],
+                    "onReload": [],
+                    "beforeFeature": [],
+                    "beforeScenario": [],
+                    "beforeStep": [],
+                    "afterFeature": [],
+                    "afterScenario": [],
+                    "afterStep": [],
+                    "logOutput": "log",
+                    "screenshotPath": "./errorShots/",
+                    "desiredCapabilities": {
+                        "maxInstances": 5,
+                        "browserName": "chrome"
+                    }
+                },
+                "specs": {
+                    "1635dc2ab4fa7b6b576dc229c8860e3a": {
+                        "type": "spec",
+                        "start": "2016-12-21T03:55:27.729Z",
+                        "_duration": 4711,
+                        "files": [
+                            "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                        ],
+                        "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a",
+                        "suites": {
+                            "mercury loginsuite1": {
+                                "type": "suite",
+                                "start": "2016-12-21T03:55:28.698Z",
+                                "_duration": 3563,
+                                "uid": "mercury loginsuite1",
+                                "title": "mercury login",
+                                "tests": {
+                                    "should be successfulspec0": {
+                                        "type": "test",
+                                        "start": "2016-12-21T03:55:28.699Z",
+                                        "_duration": 3562,
+                                        "uid": "should be successfulspec0",
+                                        "title": "should be successful",
+                                        "state": "pass",
+                                        "screenshots": [],
+                                        "output": [],
+                                        "end": "2016-12-21T03:55:32.261Z"
+                                    }
+                                },
+                                "hooks": {},
+                                "end": "2016-12-21T03:55:32.261Z"
+                            }
+                        },
+                        "output": [
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "method": "POST",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session",
+                                        "path": "/wd/hub/session",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session"
+                                    },
+                                    "data": {
+                                        "desiredCapabilities": {
+                                            "javascriptEnabled": true,
+                                            "locationContextEnabled": true,
+                                            "handlesAlerts": true,
+                                            "rotatable": true,
+                                            "maxInstances": 5,
+                                            "browserName": "chrome",
+                                            "loggingPrefs": {
+                                                "browser": "ALL",
+                                                "driver": "ALL"
+                                            },
+                                            "requestOrigins": {
+                                                "url": "http://webdriver.io",
+                                                "version": "4.5.1",
+                                                "name": "webdriverio"
+                                            }
+                                        }
+                                    },
+                                    "time": "2016-12-21T03:55:27.737Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "requestData": {
+                                        "desiredCapabilities": {
+                                            "javascriptEnabled": true,
+                                            "locationContextEnabled": true,
+                                            "handlesAlerts": true,
+                                            "rotatable": true,
+                                            "maxInstances": 5,
+                                            "browserName": "chrome",
+                                            "loggingPrefs": {
+                                                "browser": "ALL",
+                                                "driver": "ALL"
+                                            },
+                                            "requestOrigins": {
+                                                "url": "http://webdriver.io",
+                                                "version": "4.5.1",
+                                                "name": "webdriverio"
+                                            }
+                                        }
+                                    },
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session",
+                                            "path": "/wd/hub/session",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session"
+                                        },
+                                        "method": "POST",
+                                        "json": {
+                                            "desiredCapabilities": {
+                                                "javascriptEnabled": true,
+                                                "locationContextEnabled": true,
+                                                "handlesAlerts": true,
+                                                "rotatable": true,
+                                                "maxInstances": 5,
+                                                "browserName": "chrome",
+                                                "loggingPrefs": {
+                                                    "browser": "ALL",
+                                                    "driver": "ALL"
+                                                },
+                                                "requestOrigins": {
+                                                    "url": "http://webdriver.io",
+                                                    "version": "4.5.1",
+                                                    "name": "webdriverio"
+                                                }
+                                            }
+                                        },
+                                        "followAllRedirects": true,
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.5.1",
+                                            "Content-Type": "application/json; charset=UTF-8",
+                                            "Content-Length": 292
+                                        },
+                                        "timeout": 90000
+                                    },
+                                    "body": {
+                                        "state": null,
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 243776040,
+                                        "value": {
+                                            "applicationCacheEnabled": false,
+                                            "rotatable": false,
+                                            "mobileEmulationEnabled": false,
+                                            "networkConnectionEnabled": false,
+                                            "chrome": {
+                                                "chromedriverVersion": "2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1)",
+                                                "userDataDir": "/var/folders/tg/t1f82zj94g12mp6y9k_0427w0000gn/T/.org.chromium.Chromium.IPsNwR"
+                                            },
+                                            "takesHeapSnapshot": true,
+                                            "pageLoadStrategy": "normal",
+                                            "databaseEnabled": false,
+                                            "handlesAlerts": true,
+                                            "hasTouchScreen": false,
+                                            "version": "55.0.2883.95",
+                                            "platform": "MAC",
+                                            "browserConnectionEnabled": false,
+                                            "nativeEvents": true,
+                                            "acceptSslCerts": true,
+                                            "webdriver.remote.sessionid": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                            "locationContextEnabled": true,
+                                            "webStorageEnabled": true,
+                                            "browserName": "chrome",
+                                            "takesScreenshot": true,
+                                            "javascriptEnabled": true,
+                                            "cssSelectorsEnabled": true
+                                        },
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:28.660Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "beforecommand",
+                                "payload": {
+                                    "event": "runner:beforecommand",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "command": "url",
+                                    "args": [
+                                        "http://newtours.demoaut.com/"
+                                    ],
+                                    "time": "2016-12-21T03:55:28.704Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "method": "POST",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/url",
+                                        "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/url",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/url"
+                                    },
+                                    "data": {
+                                        "url": "http://newtours.demoaut.com/"
+                                    },
+                                    "time": "2016-12-21T03:55:28.708Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "requestData": {
+                                        "url": "http://newtours.demoaut.com/"
+                                    },
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/url",
+                                            "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/url",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/url"
+                                        },
+                                        "json": {
+                                            "url": "http://newtours.demoaut.com/"
+                                        },
+                                        "followAllRedirects": true,
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.5.1",
+                                            "Content-Type": "application/json; charset=UTF-8",
+                                            "Content-Length": 38
+                                        },
+                                        "method": "POST",
+                                        "timeout": 90000
+                                    },
+                                    "body": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 996974045,
+                                        "value": null,
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:29.640Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "aftercommand",
+                                "payload": {
+                                    "event": "runner:aftercommand",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "command": "url",
+                                    "args": [
+                                        "http://newtours.demoaut.com/"
+                                    ],
+                                    "result": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 996974045,
+                                        "value": null,
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:29.640Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "beforecommand",
+                                "payload": {
+                                    "event": "runner:beforecommand",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "command": "setValue",
+                                    "args": [
+                                        "input[name='userName']",
+                                        "mercury"
+                                    ],
+                                    "time": "2016-12-21T03:55:29.645Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "method": "POST",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/elements",
+                                        "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/elements",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/elements"
+                                    },
+                                    "data": {
+                                        "using": "css selector",
+                                        "value": "input[name='userName']"
+                                    },
+                                    "time": "2016-12-21T03:55:29.648Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "requestData": {
+                                        "using": "css selector",
+                                        "value": "input[name='userName']"
+                                    },
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/elements",
+                                            "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/elements",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/elements"
+                                        },
+                                        "json": {
+                                            "using": "css selector",
+                                            "value": "input[name='userName']"
+                                        },
+                                        "followAllRedirects": true,
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.5.1",
+                                            "Content-Type": "application/json; charset=UTF-8",
+                                            "Content-Length": 57
+                                        },
+                                        "method": "POST",
+                                        "timeout": 90000
+                                    },
+                                    "body": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 785740540,
+                                        "value": [
+                                            {
+                                                "ELEMENT": "0"
+                                            }
+                                        ],
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:29.678Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "method": "POST",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/0/clear",
+                                        "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/0/clear",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/0/clear"
+                                    },
+                                    "data": {},
+                                    "time": "2016-12-21T03:55:29.685Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "requestData": {},
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/0/clear",
+                                            "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/0/clear",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/0/clear"
+                                        },
+                                        "method": "POST",
+                                        "json": true,
+                                        "followAllRedirects": true,
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.5.1"
+                                        },
+                                        "timeout": 90000
+                                    },
+                                    "body": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 1874385700,
+                                        "value": null,
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:29.734Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "method": "POST",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/0/value",
+                                        "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/0/value",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/0/value"
+                                    },
+                                    "data": {
+                                        "value": [
+                                            "m",
+                                            "e",
+                                            "r",
+                                            "c",
+                                            "u",
+                                            "r",
+                                            "y"
+                                        ]
+                                    },
+                                    "time": "2016-12-21T03:55:29.735Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "requestData": {
+                                        "value": [
+                                            "m",
+                                            "e",
+                                            "r",
+                                            "c",
+                                            "u",
+                                            "r",
+                                            "y"
+                                        ]
+                                    },
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/0/value",
+                                            "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/0/value",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/0/value"
+                                        },
+                                        "json": {
+                                            "value": [
+                                                "m",
+                                                "e",
+                                                "r",
+                                                "c",
+                                                "u",
+                                                "r",
+                                                "y"
+                                            ]
+                                        },
+                                        "followAllRedirects": true,
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.5.1",
+                                            "Content-Type": "application/json; charset=UTF-8",
+                                            "Content-Length": 39
+                                        },
+                                        "method": "POST",
+                                        "timeout": 90000
+                                    },
+                                    "body": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 1549629953,
+                                        "value": null,
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:29.798Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "aftercommand",
+                                "payload": {
+                                    "event": "runner:aftercommand",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "command": "setValue",
+                                    "args": [
+                                        "input[name='userName']",
+                                        "mercury"
+                                    ],
+                                    "result": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 1549629953,
+                                        "value": null,
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:29.798Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "beforecommand",
+                                "payload": {
+                                    "event": "runner:beforecommand",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "command": "setValue",
+                                    "args": [
+                                        "input[name='password']",
+                                        "mercury"
+                                    ],
+                                    "time": "2016-12-21T03:55:29.801Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "method": "POST",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/elements",
+                                        "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/elements",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/elements"
+                                    },
+                                    "data": {
+                                        "using": "css selector",
+                                        "value": "input[name='password']"
+                                    },
+                                    "time": "2016-12-21T03:55:29.802Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "requestData": {
+                                        "using": "css selector",
+                                        "value": "input[name='password']"
+                                    },
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/elements",
+                                            "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/elements",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/elements"
+                                        },
+                                        "json": {
+                                            "using": "css selector",
+                                            "value": "input[name='password']"
+                                        },
+                                        "followAllRedirects": true,
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.5.1",
+                                            "Content-Type": "application/json; charset=UTF-8",
+                                            "Content-Length": 57
+                                        },
+                                        "method": "POST",
+                                        "timeout": 90000
+                                    },
+                                    "body": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 50370082,
+                                        "value": [
+                                            {
+                                                "ELEMENT": "1"
+                                            }
+                                        ],
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:29.819Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "method": "POST",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/1/clear",
+                                        "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/1/clear",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/1/clear"
+                                    },
+                                    "data": {},
+                                    "time": "2016-12-21T03:55:29.820Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "requestData": {},
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/1/clear",
+                                            "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/1/clear",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/1/clear"
+                                        },
+                                        "method": "POST",
+                                        "json": true,
+                                        "followAllRedirects": true,
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.5.1"
+                                        },
+                                        "timeout": 90000
+                                    },
+                                    "body": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 113722924,
+                                        "value": null,
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:29.844Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "method": "POST",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/1/value",
+                                        "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/1/value",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/1/value"
+                                    },
+                                    "data": {
+                                        "value": [
+                                            "m",
+                                            "e",
+                                            "r",
+                                            "c",
+                                            "u",
+                                            "r",
+                                            "y"
+                                        ]
+                                    },
+                                    "time": "2016-12-21T03:55:29.844Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "requestData": {
+                                        "value": [
+                                            "m",
+                                            "e",
+                                            "r",
+                                            "c",
+                                            "u",
+                                            "r",
+                                            "y"
+                                        ]
+                                    },
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/1/value",
+                                            "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/1/value",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/1/value"
+                                        },
+                                        "json": {
+                                            "value": [
+                                                "m",
+                                                "e",
+                                                "r",
+                                                "c",
+                                                "u",
+                                                "r",
+                                                "y"
+                                            ]
+                                        },
+                                        "followAllRedirects": true,
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.5.1",
+                                            "Content-Type": "application/json; charset=UTF-8",
+                                            "Content-Length": 39
+                                        },
+                                        "method": "POST",
+                                        "timeout": 90000
+                                    },
+                                    "body": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 789564459,
+                                        "value": null,
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:29.886Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "aftercommand",
+                                "payload": {
+                                    "event": "runner:aftercommand",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "command": "setValue",
+                                    "args": [
+                                        "input[name='password']",
+                                        "mercury"
+                                    ],
+                                    "result": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 789564459,
+                                        "value": null,
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:29.886Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "beforecommand",
+                                "payload": {
+                                    "event": "runner:beforecommand",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "command": "click",
+                                    "args": [
+                                        "input[name='login']"
+                                    ],
+                                    "time": "2016-12-21T03:55:29.889Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "method": "POST",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element",
+                                        "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element"
+                                    },
+                                    "data": {
+                                        "using": "css selector",
+                                        "value": "input[name='login']"
+                                    },
+                                    "time": "2016-12-21T03:55:29.891Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "requestData": {
+                                        "using": "css selector",
+                                        "value": "input[name='login']"
+                                    },
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element",
+                                            "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element"
+                                        },
+                                        "json": {
+                                            "using": "css selector",
+                                            "value": "input[name='login']"
+                                        },
+                                        "followAllRedirects": true,
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.5.1",
+                                            "Content-Type": "application/json; charset=UTF-8",
+                                            "Content-Length": 54
+                                        },
+                                        "method": "POST",
+                                        "timeout": 90000
+                                    },
+                                    "body": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 414529209,
+                                        "value": {
+                                            "ELEMENT": "2"
+                                        },
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:29.912Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "method": "POST",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/2/click",
+                                        "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/2/click",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/2/click"
+                                    },
+                                    "data": {},
+                                    "time": "2016-12-21T03:55:29.914Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "requestData": {},
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/2/click",
+                                            "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/2/click",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/element/2/click"
+                                        },
+                                        "method": "POST",
+                                        "json": true,
+                                        "followAllRedirects": true,
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.5.1"
+                                        },
+                                        "timeout": 90000
+                                    },
+                                    "body": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 520290827,
+                                        "value": null,
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:32.236Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "aftercommand",
+                                "payload": {
+                                    "event": "runner:aftercommand",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "command": "click",
+                                    "args": [
+                                        "input[name='login']"
+                                    ],
+                                    "result": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 520290827,
+                                        "value": null,
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:32.243Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "beforecommand",
+                                "payload": {
+                                    "event": "runner:beforecommand",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "command": "getTitle",
+                                    "args": [],
+                                    "time": "2016-12-21T03:55:32.243Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "method": "GET",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/title",
+                                        "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/title",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/title"
+                                    },
+                                    "data": {},
+                                    "time": "2016-12-21T03:55:32.243Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "requestData": {},
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/title",
+                                            "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/title",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424/title"
+                                        },
+                                        "json": true,
+                                        "followAllRedirects": true,
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.5.1"
+                                        },
+                                        "timeout": 90000
+                                    },
+                                    "body": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 592040417,
+                                        "value": "Find a Flight: Mercury Tours:",
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:32.253Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "aftercommand",
+                                "payload": {
+                                    "event": "runner:aftercommand",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "command": "getTitle",
+                                    "args": [],
+                                    "result": "Find a Flight: Mercury Tours:",
+                                    "time": "2016-12-21T03:55:32.254Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "method": "DELETE",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424"
+                                    },
+                                    "data": {},
+                                    "time": "2016-12-21T03:55:32.365Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                                    ],
+                                    "requestData": {},
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                            "path": "/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session/262e0e11-1ecc-42b4-a86c-f415c03c2424"
+                                        },
+                                        "method": "DELETE",
+                                        "json": true,
+                                        "followAllRedirects": true,
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.5.1"
+                                        },
+                                        "timeout": 90000
+                                    },
+                                    "body": {
+                                        "state": "success",
+                                        "sessionId": "262e0e11-1ecc-42b4-a86c-f415c03c2424",
+                                        "hCode": 1920352055,
+                                        "value": null,
+                                        "class": "org.openqa.selenium.remote.Response",
+                                        "status": 0
+                                    },
+                                    "time": "2016-12-21T03:55:32.439Z",
+                                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a"
+                                }
+                            }
+                        ],
+                        "end": "2016-12-21T03:55:32.440Z"
+                    }
+                },
+                "sessionID": "262e0e11-1ecc-42b4-a86c-f415c03c2424"
+            }
+        },
+        "failures": [],
+        "end": "2016-12-21T03:55:32.449Z"
+    },
+    "suites": [
+        {
+            "cid": "0-0",
+            "uid": "mercury loginsuite1",
+            "event": "suite:start",
+            "title": "mercury login",
+            "pending": false,
+            "parent": null,
+            "type": "suite",
+            "file": "",
+            "err": null,
+            "runner": {
+                "0-0": {
+                    "maxInstances": 5,
+                    "browserName": "chrome"
+                }
+            },
+            "specs": [
+                "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+            ],
+            "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a",
+            "start": 1482292528700,
+            "tests": [
+                {
+                    "cid": "0-0",
+                    "uid": "should be successfulspec0",
+                    "event": "test:start",
+                    "title": "should be successful",
+                    "pending": false,
+                    "parent": "mercury loginsuite1",
+                    "type": "test",
+                    "file": "",
+                    "err": null,
+                    "runner": {
+                        "0-0": {
+                            "maxInstances": 5,
+                            "browserName": "chrome"
+                        }
+                    },
+                    "specs": [
+                        "/Users/srikanthnettem/workspace/my-projects/sample-e2e-test/src/test/mercury.login.spec.js"
+                    ],
+                    "specHash": "1635dc2ab4fa7b6b576dc229c8860e3a",
+                    "state": "PASS",
+                    "end": 1482292532261
+                }
+            ],
+            "end": 1482292532261
+        }
+    ]
+}

@@ -4,7 +4,8 @@ import { ISuite } from "../../entities";
 
 @Component({
     selector: "dashboard-suites",
-    templateUrl: './app.dashboard.suites.template.html'
+    templateUrl: './app.dashboard.suites.template.html',
+    styleUrls:['./app.dashboard.suites.css']
 })
 export class SuitesComponent implements OnInit {
     suitesData: ISuite[];

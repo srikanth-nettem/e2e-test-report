@@ -1,10 +1,40 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+
+<div class="sidebar-nav">
+    <div class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">{{brand}}</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+            <span class="visible-xs navbar-brand">Sidebar menu</span>
         </div>
-        <ul class='nav navbar-nav'>
-                <li *ngFor= "let navItem of navItems" class={{navItem.class}}><a href="#"><span>{{navItem.name}}</span></a></li>
-        </ul>
+        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li [ngClass]="{'active':flags&&flags[0]}">
+                    <a [routerLink]="['/dashboard']" (click)="toggle(0)">
+                        <div class="text-center active"><span style="font-size:2em" class="glyphicon glyphicon-th-large"></span>
+                            <div ><span >Dashboard</span></div>
+                        </div>
+                    </a>
+                </li>
+                <li [ngClass]="{'active':flags&&flags[1]}">
+                    <a [routerLink]="['/report']" (click)="toggle(1)">
+                        <div class="text-center"><span style="font-size:2em" class="glyphicon glyphicon-list"></span>
+                            <div ><span >Report</span></div>
+                        </div>
+                    </a>
+                </li>
+                <li [ngClass]="{'active':flags&&flags[2]}">
+                    <a  [routerLink]="['/logs']" (click)="toggle(2)">
+                        <div class="text-center"><span style="font-size:2em" class="glyphicon glyphicon-list-alt"></span>
+                            <div ><span >Logs</span></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
     </div>
-</nav>
+</div>

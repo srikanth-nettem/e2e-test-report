@@ -17,8 +17,8 @@ export class SuiteChartOptions {
 
     private options: any = {
         chart: {
-            height: 250,
-            width:450,
+            height: 300,
+            width:500,
             type: 'column'
         },
         title: {
@@ -62,12 +62,12 @@ export class SuiteChartOptions {
                     enabled: true,
                     color: 'white'
                 }
-            }
+        }
         },
         series: []
     };
 
-    getOptions(): Observable<Object> {
+    getOptions(): Observable<any> {
         let deferred;
 
         this.getSeries().subscribe((data)=>{
@@ -93,7 +93,7 @@ export class SuiteChartOptions {
             deferred.next(seriesData); 
             deferred.complete();});
             });
-        return new Observable((observer)=> deferred = observer);
+        return new Observable<ISeries[]>((observer)=> deferred = observer);
     }
 
     private getSeriesData(suite: ISuite, category: Status): Number {

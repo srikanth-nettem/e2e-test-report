@@ -21,6 +21,86 @@
     },
     "suites": [
         {
+            "name": "sample test suite number 0",
+            "duration": 12572,
+            "start": "2016-05-04T13:06:01.701Z",
+            "end": "2016-05-04T13:06:14.273Z",
+            "id":"34343-3435-33434-3231",
+            "tests": [
+                {
+                    "name": "@Smoke-Sample test number 1",
+                    "start": "2016-05-04T13:06:01.701Z",
+                    "end": "2016-05-04T13:06:08.162Z",
+                    "duration": 6461,
+                    "state": "pass",
+                    "steps": [
+                        {
+                            "name": "@Smoke-Sample test step 1",
+                            "start": "2016-05-04T13:06:01.701Z",
+                            "end": "2016-05-04T13:06:08.162Z",
+                            "duration": 6461,
+                            "state": "pass"
+                        },
+                        {
+                            "name": "@Smoke-Sample test step 2",
+                            "start": "2016-05-04T13:06:01.701Z",
+                            "end": "2016-05-04T13:06:08.162Z",
+                            "duration": 6461,
+                            "state": "pass"
+                        },
+                        {
+                            "name": "@Smoke-Sample test step 3",
+                            "start": "2016-05-04T13:06:01.701Z",
+                            "end": "2016-05-04T13:06:08.162Z",
+                            "duration": 6461,
+                            "state": "pass"
+                        }
+                    ]
+                }
+            ],
+            "hooks": [
+                {
+                    "start": "2016-09-08T12:50:51.829Z",
+                    "end": "2016-09-08T12:50:54.475Z",
+                    "duration": 2646,
+                    "title": "\"before each\" hook",
+                    "associatedSuite": "sample test suite number 1",
+                    "associatedTest": "@Smoke-Sample test number 1"
+                },
+                {
+                    "start": "2016-09-08T12:50:57.672Z",
+                    "end": "2016-09-08T12:50:57.672Z",
+                    "duration": 0,
+                    "title": "\"after each\" hook",
+                    "associatedSuite": "sample test suite number 1",
+                    "associatedTest": "@Smoke-Sample test number 1"
+                },
+                {
+                    "start": "2016-09-08T12:51:51.829Z",
+                    "end": "2016-09-08T12:51:54.475Z",
+                    "duration": 2646,
+                    "title": "\"before each\" hook",
+                    "associatedSuite": "sample test suite number 1",
+                    "associatedTest": "@Smoke-Sample test number 2"
+                },
+                {
+                    "start": "2016-09-08T12:51:57.672Z",
+                    "end": "2016-09-08T12:51:57.672Z",
+                    "duration": 0,
+                    "title": "\"after each\" hook",
+                    "associatedSuite": "sample test suite number 1",
+                    "associatedTest": "@Smoke-Sample test number 2"
+                },
+                {
+                    "start": "2016-09-08T12:50:57.672Z",
+                    "end": "2016-09-08T12:50:57.672Z",
+                    "duration": 0,
+                    "title": "\"after all\" hook",
+                    "associatedSuite": "sample test suite number 1"
+                }
+            ]
+        },
+        {
             "name": "sample test suite number 1",
             "duration": 12572,
             "start": "2016-05-04T13:06:01.701Z",

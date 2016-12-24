@@ -32,7 +32,7 @@ export class ReportContext {
             deferred.complete();
         });
 
-        return new Observable(observer => { deferred = observer });
+        return new Observable<T>(observer => { deferred = observer });
     }
 
     private find<T>(args: T[], callback: (arg: T) => boolean): T {
